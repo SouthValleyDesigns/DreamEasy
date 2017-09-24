@@ -1,16 +1,29 @@
-{% extends './base.html'%}
-{% load static %}
-{% block content %}
+{% extends './base.html'%} {% load static %} {% block content %}
 <style>
 .gradient {
     height: 100vh;
     width: 100vw;
-    background:#FFF;
+    background: #FFF;
     background-image: url({% static 'img/noise.png' %});
     background-size: 150px 150px, 100% 100%;
     background-color: #f7f7f7;
 }
+
+.paper {
+    background: #fff;
+    border-radius: 0px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
 </style>
 <div class="gradient">
+    <div class="paper">
+    </div>
 </div>
+
 {% endblock content %}

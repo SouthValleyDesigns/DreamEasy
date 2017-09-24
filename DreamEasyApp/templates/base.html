@@ -56,10 +56,15 @@
 }
 </style>
 <body>
-
-{% block content %}
-{% endblock content %}
-
+    <div class="noise-bg">
+        <div class="paper">
+            <h1 class="title">Dream Easy Collective</h1>
+            <div class="content">
+                {% block content %}
+                {% endblock content %}
+            </div>
+        </div>
+    </div>
 <footer>
     <div class='container'>
         <div class='text-muted'>

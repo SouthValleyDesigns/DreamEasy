@@ -20,31 +20,6 @@
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' crossorigin='anonymous'></script>
     <script type='text/javascript' src='{% static 'javascript/main.js' %}'></script>
 </head>
-<nav class='navbar fixed-top navbar-toggleable-md navbar-light bg-faded animated slideInDown'>
-
-    <button class='navbar-toggler navbar-toggler-right' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
-        <span class='navbar-toggler-icon'></span>
-    </button>
-    <a class='navbar-brand' href='#'><img src=''></a>
-    <div class='collapse navbar-collapse' id='navbarNavDropdown'>
-        <ul class='navbar-nav mr-auto'>
-            <li class='nav-item {% block index-tab %}{% endblock %}'>
-                <a class='nav-link' href='#'>Home <span class='sr-only'>(current)</span></a>
-            </li>
-            <li class='nav-item {% block members-tab %}{% endblock %}'>
-                <a class='nav-link' href='#'>Members <span class='sr-only'>(current)</span></a>
-            </li>
-            <li class='nav-item {% block art-tab %}{% endblock %}'>
-                <a class='nav-link' href='#'>Art <span class='sr-only'>(current)</span></a>
-            </li>
-        </ul>
-        <ul class='navbar-nav'>
-            <li class='nav-item'>
-                <a class='nav-link' href='mailto:susanjordan.attorney@gmail.com'>Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 <style>
 .noise-bg {
     width: 100%;
@@ -56,9 +31,33 @@
 }
 </style>
 <body>
-    <div class="noise-bg">
+    <div class="section noise-bg">
         <div class="paper">
             <h1 class="title">Dream Easy Collective</h1>
+            <nav class='navbar navbar-toggleable-md navbar-light bg-faded'>
+
+                <button class='navbar-toggler navbar-toggler-right' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+                <a class='navbar-brand' href='#'><img src=''></a>
+                <div class='collapse navbar-collapse' id='navbarNavDropdown'>
+                    <ul class='navbar-nav mx-auto'>
+                        <li class='nav-item {% block index-tab %}{% endblock %}'>
+                            <a class='nav-link' href='#'>Home <span class='sr-only'>(current)</span></a>
+                        </li>
+                        <li class='nav-item {% block members-tab %}{% endblock %}'>
+                            <a class='nav-link' href='#'>Members <span class='sr-only'>(current)</span></a>
+                        </li>
+                        <li class='nav-item {% block art-tab %}{% endblock %}'>
+                            <a class='nav-link' href='#'>Art <span class='sr-only'>(current)</span></a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='mailto:susanjordan.attorney@gmail.com'>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <hr>
             <div class="content">
                 {% block content %}
                 {% endblock content %}

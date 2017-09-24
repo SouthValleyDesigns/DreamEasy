@@ -20,7 +20,6 @@
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' crossorigin='anonymous'></script>
     <script type='text/javascript' src='{% static 'javascript/main.js' %}'></script>
 </head>
-
 <nav class='navbar fixed-top navbar-toggleable-md navbar-light bg-faded animated slideInDown'>
 
     <button class='navbar-toggler navbar-toggler-right' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
@@ -46,7 +45,16 @@
         </ul>
     </div>
 </nav>
-
+<style>
+.noise-bg {
+    height: 100vh;
+    width: 100vw;
+    background: #FFF;
+    background-image: url({% static 'img/noise.png' %});
+    background-size: 150px 150px, 100% 100%;
+    background-color: #f7f7f7;
+}
+</style>
 <body>
 
 {% block content %}

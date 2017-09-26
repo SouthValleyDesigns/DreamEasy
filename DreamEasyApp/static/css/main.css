@@ -204,7 +204,7 @@ strong {
 }
 /* line 32, ../sass/main.scss */
 .navbar a:hover {
-  box-shadow: inset 0 -2px 0 0 #464646;
+  box-shadow: inset 0 -1px 0 0 #464646;
 }
 
 /* line 37, ../sass/main.scss */

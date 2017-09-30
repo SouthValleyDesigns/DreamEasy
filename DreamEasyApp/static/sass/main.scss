@@ -27,10 +27,10 @@ strong {
     border: 0px;
     background-color: rgba(0,0,0,0) !important;
     min-height: 0;
-    @include transitions(0.25s);
+    @include transitions(0s);
 
     a:hover {
-        box-shadow: inset 0 -1px 0 0 #464646;
+        border-bottom:-1px #464646;
     }
 }
 

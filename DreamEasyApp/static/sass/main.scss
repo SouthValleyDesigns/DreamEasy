@@ -27,11 +27,6 @@ strong {
     border: 0px;
     background-color: rgba(0,0,0,0) !important;
     min-height: 0;
-    @include transitions(0s);
-
-    a:hover {
-        border-bottom:-1px #464646;
-    }
 }
 
 .navbar.scrolldown {
@@ -157,13 +152,13 @@ span, p {
 
 .title {
     font-weight: 100;
-    font-family: "Roboto", sans-serif;
+    font-family: "amarillo", sans-serif;
     line-height: 1.20;
     opacity: 1.0;
     letter-spacing: -0.72px;
     word-spacing: 0;
     text-transform: none;
-    margin-top: 0;
+    margin-top: 5vh;
     margin-bottom: 10px;
 }
 

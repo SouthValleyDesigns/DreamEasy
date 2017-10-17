@@ -43,10 +43,10 @@
                     <div class='collapse navbar-collapse' id='navbarNavDropdown'>
                         <ul class='navbar-nav mx-auto'>
                             <li class='nav-item {% block index-tab %}{% endblock %}'>
-                                <a class='nav-link' href='#'>Home <span class='sr-only'>(current)</span></a>
+                                <a class='nav-link' href='{% url 'DreamEasyApp:index' %}'>Home <span class='sr-only'>(current)</span></a>
                             </li>
                             <li class='nav-item {% block members-tab %}{% endblock %}'>
-                                <a class='nav-link' href='#'>Members <span class='sr-only'>(current)</span></a>
+                                <a class='nav-link' href='{% url 'DreamEasyApp:members' %}'>Members <span class='sr-only'>(current)</span></a>
                             </li>
                             <li class='nav-item {% block art-tab %}{% endblock %}'>
                                 <a class='nav-link' href='#'>Art <span class='sr-only'>(current)</span></a>

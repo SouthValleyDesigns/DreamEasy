@@ -9,8 +9,8 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
-def art(request):
-    pass
-
 def members(request):
+    return render(request, 'members.html')
+
+def art(request):
     pass

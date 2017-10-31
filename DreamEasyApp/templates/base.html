@@ -31,7 +31,7 @@
 }
 </style>
 <body>
-    <div class=" noise-bg">
+    <div class="noise-bg">
         <div class="paper">
             <!-- <div class='section'> -->
                 <h1 class='title'>Dream Easy</h1>
@@ -57,7 +57,7 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="content">
+                <div class="content fade-in">
                     {% block content %}
                     {% endblock content %}
                 </div>
@@ -72,5 +72,10 @@
     </div>
 </footer>
 </body>
-
+<script>
+    $(".fade-in").hide()
+    $(document).ready(function() {
+        $(".fade-in").fadeIn(1000, "swing")
+    });
+</script>
 </html>

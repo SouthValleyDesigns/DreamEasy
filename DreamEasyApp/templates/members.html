@@ -6,5 +6,12 @@ active
 
 {% block content %}
     <h1> members </h1>
+    {% for member in member_list %}
+        <h4 class='profile-pic'></h4>
+        <p class='flip-container'>
+            {{member.name}}
+            {{member.description}}
+        </p>
+    {% endfor %}
 
 {% endblock %}

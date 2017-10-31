@@ -13,4 +13,7 @@ def members(request):
     return render(request, 'members.html')
 
 def art(request):
-    pass
+    return render(request, 'art.html')
+
+def contact(request):
+    return render(request, 'contact.html')

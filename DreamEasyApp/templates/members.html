@@ -6,5 +6,9 @@ active
 
 {% block content %}
     <h1> members </h1>
+    {% for member in member_list %}
+        <h4>{{member.name}}</h4>
+        <p>{{member.description}}</p>
+    {% endfor %}
 
 {% endblock %}

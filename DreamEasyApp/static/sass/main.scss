@@ -29,6 +29,12 @@ strong {
     background-color: rgba(0,0,0,0) !important;
     min-height: 0;
 
+    .navbar-toggler {
+        text-align: center;
+        border: 0px;
+        font-weight: 700;
+    }
+
     .collapse {
         text-align: center !important;
     }
@@ -153,30 +159,33 @@ span, p {
     margin-top: 5vh;
     margin-bottom: 10px;
 }
+@media screen and (min-width:1024px){
+    .noise-bg {
+        width: 100%;
+        overflow: auto;
+        background: #FFF;
+        background-image: url('../img/noise.png');
+        background-size: 150px 150px, 100% 100%;
+        background-color: #f7f7f7;
 
-.noise-bg {
-    width: 100%;
-    overflow: auto;
-    background: #FFF;
-    background-image: url('../img/noise.png');
-    background-size: 150px 150px, 100% 100%;
-    background-color: #f7f7f7;
+        .paper {
+            padding: 25px;
+            background: #fff;
+            border-radius: 4px;
+            display: inline-block;
+            box-shadow: 0 1px 3px rgba(50,50,50,0.12), 0 1px 2px rgba(50,50,50,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
-    .paper {
-        padding: 25px;
-        background: #fff;
-        border-radius: 4px;
-        display: inline-block;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        text-align: center;
-
-        width: 85%;
-        margin: 10vh 7.5%;
-        height: 100%;
-
-        position: relative;
+            width: 85%;
+            margin: 10vh 7.5%;
+            height: 100%;
+        }
     }
+}
+
+.paper {
+    text-align: center;
+    position: relative;
 }
 
 .container {
@@ -216,10 +225,12 @@ span, p {
 }
 
 .member {
-    float: left;
-    width: 23vw;
+    // float: left;
+    width: 32%;
+    height: 32%;
 
     .profile-pic {
+        transition: 0.25s;
         margin-left: 10px;
         margin-right: 10px;
         font-size: 1.75em;
@@ -227,12 +238,18 @@ span, p {
     }
 
     .profile-pic:hover {
-        // border-radius: 4% !important;
+        box-shadow: 4px;
     }
 
-    @media (max-width: 640px) {
-        .profile-pic {
-            display: none;
+    @media (max-width: 720px) {
+        width: 49%;
+        height: 49%;
+
+        .profile-pic, .front, .back {
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 
@@ -245,8 +262,10 @@ span, p {
     }
 
     .profile-pic, .front, .back {
-        width: 23vw;
-        height: 23vw;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 

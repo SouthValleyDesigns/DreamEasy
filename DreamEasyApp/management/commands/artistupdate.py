@@ -25,8 +25,12 @@ class Command(BaseCommand):
                 for link in soup.find_all('script'):
                     script_info = link.string
 
-                print re.findall(r'https?://[^\s<>"]+|www\.[^\s<>"]+',
+                #Fix your shitty API soundcloud!!
+                soundcloud_avatar = re.findall(r'https?://[^\s<>"]+|www\.[^\s<>"]+',
                                  str(script_info.encode('utf-8')))[0].replace('large', 't500x500')
+
+                member.photo_url = soundcloud_avatar
+                member.save()
 
             except:
                 raise CommandError('Could not scrape "%s" for soundcould avatar' % member.name)

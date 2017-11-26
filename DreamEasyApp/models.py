@@ -5,7 +5,7 @@ from django.db import models
 
 class Member(models.Model):
     name = models.CharField(max_length=200)
-    description = models.TextField(max_length=1000)
+    photo_url = models.CharField(max_length=200, default='http://www.stallerdental.com/wp-content/uploads/2016/12/user-icon.png')
     soundcloud_url = models.CharField(max_length=100, default='#')
 
     def __str__(self):

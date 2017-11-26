@@ -58,6 +58,13 @@ strong {
 //   }
 // }
 
+#main-content {
+    img {
+        width: 25vh;
+        margin: auto;
+    }
+}
+
 .header {
     @include backgroundImage('https://ak2.picdn.net/shutterstock/videos/1457272/thumb/1.jpg');
     background-attachment: fixed;
@@ -174,7 +181,7 @@ span, p {
             border-radius: 4px;
             display: inline-block;
             box-shadow: 0 1px 3px rgba(50,50,50,0.12), 0 1px 2px rgba(50,50,50,0.24);
-            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            transition: all 0.3s cubic-bezier(.5,.8,.5,1);
 
             width: 85%;
             margin: 10vh 7.5%;
@@ -186,6 +193,31 @@ span, p {
 .paper {
     text-align: center;
     position: relative;
+
+}
+
+.content {
+    h6 {
+        font-size: 0.9em;
+        margin-top: 45px;
+        margin-bottom: 60px;
+    }
+}
+
+#social-links {
+    font-size: 1.2em !important;
+    width: 100px;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 70px;
+
+    a {
+        color: #292b2c;
+    }
+
+    a:hover {
+        color: $primary_color;
+    }
 }
 
 .container {

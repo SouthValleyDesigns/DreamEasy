@@ -5,16 +5,16 @@ active
 {% endblock %}
 
 {% block content %}
-<!-- <div class='section'> -->
-    <h1> members </h1>
+<hr>
+<div class='container'>
     {% for member in member_list %}
-        <h4 class='profile-pic'></h4>
-        <p class='flip-container'>
-            {{member.name}}
-            {{member.description}}
-        </p>
+        <div class='member'>
+            <a href='#'><h4 class='profile-pic' style='background-image: url({{member.photo_url}});'></h4></a>
+            <p class='flip-container'>
+                {{member.name}}
+                {{member.description}}
+            </p>
+        </div>
     {% endfor %}
-<!-- </div> -->
-
-
+</div>
 {% endblock %}

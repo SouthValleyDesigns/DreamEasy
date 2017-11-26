@@ -181,7 +181,9 @@ span, p {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    // flex-direction: column;
+    justify-content: space-between;
 }
 
 .text-container {
@@ -213,38 +215,39 @@ span, p {
     background-color: #f3f3f3;
 }
 
-.profile-pic {
-    transition: .5s;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 1.75em;
-    @include box_shadow(1);
-}
+.member {
+    float: left;
+    width: 23vw;
 
-.profile-pic:hover {
-    @include box_shadow(2);
-    -webkit-transform: translate3d(0, -3%, 0);
-    transform: translate3d(0, -3%, 0);
-}
-
-@media (max-width: 640px) {
     .profile-pic {
-        display: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.75em;
+        background-size: 100%;
     }
-}
 
-.flip-container {
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -o-perspective: 1000;
-    perspective: 1000;
-    margin-right: 15px;
-}
+    .profile-pic:hover {
+        // border-radius: 4% !important;
+    }
 
-.profile-pic, .front, .back {
-    width: 144px;
-    height: 144px;
-    border-radius: 50% !important;
+    @media (max-width: 640px) {
+        .profile-pic {
+            display: none;
+        }
+    }
+
+    .flip-container {
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+        -o-perspective: 1000;
+        perspective: 1000;
+        margin-right: 15px;
+    }
+
+    .profile-pic, .front, .back {
+        width: 23vw;
+        height: 23vw;
+    }
 }
 
 .card-link:hover {

@@ -1,1 +1,1 @@
-web: gunicorn Dreameasy.wsgi --log-file -
+web: gunicorn DreamEasy.wsgi --log-file -

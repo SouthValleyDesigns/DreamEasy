@@ -9,7 +9,8 @@ active
 <div class='container'>
     {% for member in member_list %}
         <div class='member'>
-            <a class='profile-pic {% if member.soundcloud_url == '#' %}no-url{% endif %}' href='{{member.soundcloud_url}}'><img src='{{member.photo_url}}'></img></a>
+            <a class='profile-pic target="_blank" {% if member.soundcloud_url == '#' %}no-url{% endif %}' href='{{member.soundcloud_url}}'><img src='{{member.photo_url}}'></img></a>
+
             <p class='flip-container'>
                 {{member.name}}
             </p>

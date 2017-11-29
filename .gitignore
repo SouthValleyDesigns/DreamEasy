@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 #Sass stuff
-.sass-cache
+.sass-cache/
 
 # C extensions
 *.so

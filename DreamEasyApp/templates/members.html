@@ -9,11 +9,28 @@ active
 <div class='container'>
     {% for member in member_list %}
         <div class='member'>
-            <a class='profile-pic' href='{{member.soundcloud_url}}' target="_blank"><img src='{{member.photo_url}}'></img></a>
+            <a class='profile-pic target="_blank" {% if member.soundcloud_url == '#' %}no-url{% endif %}' href='{{member.soundcloud_url}}'><img src='{{member.photo_url}}'></img></a>
+
             <p class='flip-container'>
                 {{member.name}}
             </p>
+            {% if member.soundcloud_url == '#' %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong>Oh no!</strong> This artist doesnt have a soundcloud link right now.
+                </div>
+            {% endif %}
         </div>
     {% endfor %}
 </div>
+<script>
+    $('.alert').hide();
+    $(document).ready(function() {
+        $('.no-url').click(function(){
+            $('.alert').show()
+        })
+    });
+</script>
 {% endblock %}

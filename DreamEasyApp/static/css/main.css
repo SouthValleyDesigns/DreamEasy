@@ -424,15 +424,13 @@ span, p {
   width: 32%;
   height: 32%;
 }
-/* line 264, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 .member .profile-pic {
   transition: 0.25s;
-  margin-left: 10px;
-  margin-right: 10px;
   font-size: 1.75em;
   background-size: 100%;
 }
-/* line 272, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 .member .profile-pic:hover {
   box-shadow: 4px;
 }
@@ -442,13 +440,13 @@ span, p {
     width: 49%;
     height: 49%;
   }
-  /* line 281, ../sass/main.scss */
+  /* line 278, ../sass/main.scss */
   .member .profile-pic img, .member .front img, .member .back img {
     width: 100%;
     height: auto;
   }
 }
-/* line 288, ../sass/main.scss */
+/* line 285, ../sass/main.scss */
 .member .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -456,25 +454,25 @@ span, p {
   perspective: 1000;
   margin-right: 15px;
 }
-/* line 297, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
 .member .profile-pic img, .member .front img, .member .back img {
   width: 100%;
   height: auto;
 }
 
-/* line 304, ../sass/main.scss */
+/* line 301, ../sass/main.scss */
 .card-link:hover {
   color: black;
 }
 
-/* line 308, ../sass/main.scss */
+/* line 305, ../sass/main.scss */
 .paragraph-text {
   width: 60%;
   min-width: 200px;
   margin-bottom: 20px;
 }
 
-/* line 314, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 footer {
   text-align: center;
   padding-top: 10px;
@@ -482,28 +480,28 @@ footer {
   color: #ee3824;
   background-color: white !important;
 }
-/* line 316, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 footer a {
   color: #3a9ee4;
 }
-/* line 320, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 footer a:hover {
   color: gray !important;
 }
-/* line 324, ../sass/main.scss */
+/* line 321, ../sass/main.scss */
 footer div {
   text-align: center !important;
 }
-/* line 328, ../sass/main.scss */
+/* line 325, ../sass/main.scss */
 footer .bs-docs-footer-links {
   padding-left: 0;
   margin-bottom: 20px;
 }
-/* line 332, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 footer .bs-docs-footer-links li {
   display: inline-block;
 }
-/* line 335, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 footer .bs-docs-footer-links li + li {
   margin-left: 15px;
 }

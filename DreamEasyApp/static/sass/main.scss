@@ -257,14 +257,11 @@ span, p {
 }
 
 .member {
-    // float: left;
     width: 32%;
     height: 32%;
 
     .profile-pic {
         transition: 0.25s;
-        margin-left: 10px;
-        margin-right: 10px;
         font-size: 1.75em;
         background-size: 100%;
     }

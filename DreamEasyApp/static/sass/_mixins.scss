@@ -85,8 +85,8 @@ $primary_color: rgb(58, 158, 228);
 
 @-webkit-keyframes slideInUp {
   from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
     visibility: visible; }
   to {
     -webkit-transform: translate3d(0, 0, 0);
@@ -94,8 +94,8 @@ $primary_color: rgb(58, 158, 228);
 
 @keyframes slideInUp {
   from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
     visibility: visible; }
   to {
     -webkit-transform: translate3d(0, 0, 0);

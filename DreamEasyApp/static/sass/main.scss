@@ -31,7 +31,6 @@ strong {
 
     a {
         background-color: white !important;
-        // font-weight: ;
     }
 
     .navbar-toggler {
@@ -47,6 +46,8 @@ strong {
 
 .nav-divider {
     z-index: -200;
+    width: 85%;
+    margin: auto;
     border-bottom: 2px solid #eee !important;
     line-height: 3em;
     margin-top: -2.3em;
@@ -106,10 +107,12 @@ strong {
 
 hr {
     display: block;
+    width: 85%;
+    margin: auto;
     height: 3px;
     border: 0;
     border-top: 2px solid #eee;
-    margin: 1em 0;
+    // margin: 1em 0;
     padding: 0
 }
 
@@ -177,9 +180,11 @@ span, p {
         width: 100%;
         overflow: auto;
         background: #FFF;
-        background-image: url('../img/noise.png');
-        background-size: 150px 150px, 150% 150%;
-        background-color: #f7f7f7;
+        background-image: url('../img/8-06.jpg');
+        background-attachment: fixed;
+        // background-image: url('../img/noise.png');
+        background-size: 300px 300px, 150% 150%;
+        background-color: $primary_color;
 
         .paper {
             padding: 25px;

@@ -19,8 +19,8 @@ def members(request):
         })
 
 
-def art(request):
-    return render(request, 'art.html')
+def store(request):
+    return render(request, 'store.html')
 
 
 def contact(request):

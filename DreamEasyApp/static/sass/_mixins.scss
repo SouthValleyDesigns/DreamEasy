@@ -1,4 +1,12 @@
-$primary_color: rgb(58, 158, 228);
+$dark_primary_color: #0288D1;
+$light_primary_color: rgb(251, 231, 215);
+$primary_color: rgb(170, 54, 73);
+$text_icons: #FFFFFF;
+$accent_color: #9E9E9E;
+$primary_text: #212121;
+$secondary_text: #757575;
+$divider_color: #BDBDBD;
+
 
 @mixin backgroundImage($imgurl) {
     background-image: url($imgurl);

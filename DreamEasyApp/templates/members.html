@@ -7,7 +7,7 @@ active
 {% block content %}
 <div class='container'>
     {% for member in member_list %}
-        <div class='member animated slideInUp' data-toggle="popover" data-trigger="hover" data-placement="bottom" title="{{member.name}}" data-content="{{member.description}}">
+        <div class='member animated slideInUp' data-toggle="popover" data-trigger="hover" data-placement="top" title="{{member.name}}" data-content="{{member.description}}">
             <a  class='profile-pic {% if member.soundcloud_url == '#' %}no-url{% endif %}' href='{{member.soundcloud_url}}' {% if member.soundcloud_url != '#' %}target="_blank"{% endif %}><img src='{{member.photo_url}}'></img></a>
 
             <p class='flip-container'>

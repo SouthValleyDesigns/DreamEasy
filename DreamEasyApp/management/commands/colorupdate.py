@@ -2,6 +2,8 @@ from colorthief import ColorThief
 
 from django.core.management.base import BaseCommand, CommandError
 from bs4 import BeautifulSoup
+from scss import parser
+import sass
 
 import urllib2
 import re
@@ -27,10 +29,17 @@ class Command(BaseCommand):
         # soundcloud_avatar = re.findall(r'https?://[^\s<>"]+|www\.[^\s<>"]+',
         #                  str(script_info.encode('utf-8')))[0].replace('large', 't500x500')
 
+        file_path = 'DreamEasyApp/static/sass/_colors.scss'
+        src = open( file_path ).read()
+
+        # Create parser object
+        p = parser.Stylesheet( options=dict( compress=True ) )
+        print p.loads( src )
+
         color_thief = ColorThief('DreamEasyApp/static/img/dreameasy.jpg')
         # get the dominant color
-        dominant_color = color_thief.get_color(quality=5)
+        dominant_color = color_thief.get_color(quality=10)
         # build a color palette
-        palette = color_thief.get_palette(color_count=6)
+        palette = color_thief.get_palette(color_count=6, quality=10)
 
         print dominant_color, palette[2]

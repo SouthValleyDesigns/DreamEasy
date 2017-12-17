@@ -66,6 +66,13 @@ strong {
     padding-bottom: 10px;
 
     a {
+        font-size: 0.9em;
+        font-weight: bold;
+        background-color: white !important;
+    }
+
+    button {
+        padding: 0 26px 0 26px;
         background-color: white !important;
     }
 
@@ -84,10 +91,10 @@ strong {
     z-index: -200;
     width: 85%;
     margin: auto;
-    border-bottom: 2px solid #eee !important;
+    border-bottom: 2px solid $divider_color !important;
     line-height: 3em;
     margin-top: -2.3em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     font-size: 12px;
 }
 
@@ -224,7 +231,7 @@ span, p {
     font-size: 1.5em !important;
     width: 120px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-bottom: 45px;
 
     a {

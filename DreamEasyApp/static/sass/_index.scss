@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'mixins';
 
 #main-content {
     background-image: url('https://hdwallsource.com/img/2014/9/oregon-wallpaper-21358-21895-hd-wallpapers.jpg');
@@ -7,7 +8,7 @@
 
     h3 {
         font-weight: bold;
-        font-size: 1em;
+        font-size: 0.9em;
         margin-top: -10px;
     }
 
@@ -19,6 +20,7 @@
 }
 
 #index {
+    // padding-bottom: 46px !important;
 
     strong {
         font-weight: bold;
@@ -43,6 +45,6 @@
         // color: $secondary_text;
         color: darken($secondary_text, 20%);
         font-weight: bold;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }

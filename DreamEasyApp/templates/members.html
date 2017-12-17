@@ -8,24 +8,28 @@ active
 <div class='section' id='members'>
     <h1>Members</h1>
 </div>
-<div class='container'>
-    {% for member in member_list %}
-        <div class='member animated slideInUp' data-toggle="popover" data-trigger="hover" data-placement="top" title="{{member.name}}" data-content="{{member.description}}">
-            <a  class='profile-pic {% if member.soundcloud_url == '#' %}no-url{% endif %}' href='{{member.soundcloud_url}}' {% if member.soundcloud_url != '#' %}target="_blank"{% endif %}><img src='{{member.photo_url}}'></img></a>
+<div>
+    <h1>asdf</h1>
+    <hr>
+    <div class='container'>
+        {% for member in member_list %}
+            <div class='member animated slideInUp' data-toggle="popover" data-trigger="hover" data-placement="top" title="{{member.name}}" data-content="{{member.description}}">
+                <a  class='profile-pic {% if member.soundcloud_url == '#' %}no-url{% endif %}' href='{{member.soundcloud_url}}' {% if member.soundcloud_url != '#' %}target="_blank"{% endif %}><img src='{{member.photo_url}}'></img></a>
 
-            <p class='flip-container'>
-                {{member.name}}
-            </p>
-            {% if member.soundcloud_url == '#' %}
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <strong>Oh no!</strong> This artist doesnt have a soundcloud link right now.
-                </div>
-            {% endif %}
-        </div>
-    {% endfor %}
+                <p class='flip-container'>
+                    {{member.name}}
+                </p>
+                {% if member.soundcloud_url == '#' %}
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong>Oh no!</strong> This artist doesnt have a soundcloud link right now.
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
 </div>
 <script>
     $('.alert').hide();

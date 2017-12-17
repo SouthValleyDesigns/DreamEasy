@@ -1,0 +1,38 @@
+#main-content {
+    background-image: url('https://hdwallsource.com/img/2014/9/oregon-wallpaper-21358-21895-hd-wallpapers.jpg');
+    background-attachment: fixed;
+    color: white;
+
+    img {
+        width: 30%;
+        max-width: 150px;
+        margin: auto;
+    }
+}
+
+#index {
+
+    strong {
+        font-weight: bold;
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 0em;
+        line-height: 1em;
+    }
+
+    h1 {
+
+        text-transform:  !important;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 30px;
+        letter-spacing: .03em;
+        // line-height: .9em;
+        text-transform: none;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+}

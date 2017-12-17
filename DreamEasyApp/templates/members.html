@@ -5,24 +5,40 @@ active
 {% endblock %}
 
 {% block content %}
-<div class='container'>
-    {% for member in member_list %}
-        <div class='member animated slideInUp' data-toggle="popover" data-trigger="hover" data-placement="top" title="{{member.name}}" data-content="{{member.description}}">
-            <a  class='profile-pic {% if member.soundcloud_url == '#' %}no-url{% endif %}' href='{{member.soundcloud_url}}' {% if member.soundcloud_url != '#' %}target="_blank"{% endif %}><img src='{{member.photo_url}}'></img></a>
-
-            <p class='flip-container'>
-                {{member.name}}
-            </p>
-            {% if member.soundcloud_url == '#' %}
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <strong>Oh no!</strong> This artist doesnt have a soundcloud link right now.
-                </div>
-            {% endif %}
+<div class='section' id='members_header'>
+    <h1>Members</h1>
+    <h3>the Dream Easy gang</h3>
+</div>
+<div class='row justify-content-left' id='members'>
+    <div class='col-1 span-1'></div>
+    <div class='col-8 sqs-col-6 span-8'>
+        <div class='sqs-block html-block sqs-block-html'>
+            &ensp;
+            <h2>
+                Check out the Dream Easy team below!
+            </h2>
         </div>
-    {% endfor %}
+    </div>
+    <hr>
+    <div class='container'>
+        {% for member in member_list %}
+            <div class='member animated slideInUp' data-toggle="popover" data-trigger="hover" data-placement="top" title="{{member.name}}" data-content="{{member.description}}">
+                <a  class='profile-pic {% if member.soundcloud_url == '#' %}no-url{% endif %}' href='{{member.soundcloud_url}}' {% if member.soundcloud_url != '#' %}target="_blank"{% endif %}><img src='{{member.photo_url}}'></img></a>
+
+                <p class='flip-container'>
+                    {{member.name}}
+                </p>
+                {% if member.soundcloud_url == '#' %}
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong>Oh no!</strong> This artist doesnt have a soundcloud link right now.
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
 </div>
 <script>
     $('.alert').hide();

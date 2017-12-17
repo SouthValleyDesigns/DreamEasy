@@ -1,0 +1,74 @@
+@import 'colors';
+@import 'mixins';
+
+#main-content {
+    background-image: url('https://hdwallsource.com/img/2014/9/oregon-wallpaper-21358-21895-hd-wallpapers.jpg');
+    background-attachment: fixed;
+    color: white;
+
+    h3 {
+        font-weight: bold;
+        font-size: 0.9em;
+        margin-top: -10px;
+    }
+
+    img {
+        width: 30%;
+        max-width: 150px;
+        margin: auto;
+    }
+}
+
+#index {
+    // padding-bottom: 46px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    #soundcloud-embeds {
+        min-width: 400px;
+    }
+
+    @media screen and (max-width:782px){
+        .spacer {
+            display: none;
+        }
+    }
+
+    strong {
+        font-weight: bold;
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 0em;
+        line-height: 1em;
+    }
+
+    h1 {
+        color: $primary_text !important;
+        text-transform:  !important;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 30px;
+        letter-spacing: .03em;
+        // line-height: .9em;
+        text-transform: none;
+    }
+
+    h2 {
+        color: $primary_text !important;
+        text-transform:  !important;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 30px;
+        letter-spacing: .03em;
+        // line-height: .9em;
+        text-transform: none;
+    }
+
+    h3 {
+        // color: $secondary_text;
+        color: darken($secondary_text, 20%);
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+}

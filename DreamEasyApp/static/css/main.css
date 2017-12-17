@@ -5,7 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 59, ../sass/_mixins.scss */
+/* line 257, ../sass/_mixins.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -15,8 +15,10 @@
   user-select: none;
 }
 
-/* line 68, ../sass/_mixins.scss */
-.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
+/* line 266, ../sass/_mixins.scss */
+.noselect-recursive,
+.noselect-recursive *,
+.noselect-recursive * * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -117,31 +119,31 @@
     transform: none;
   }
 }
-/* line 150, ../sass/_mixins.scss */
+/* line 377, ../sass/_mixins.scss */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
-/* line 154, ../sass/_mixins.scss */
+/* line 382, ../sass/_mixins.scss */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
 
-/* line 158, ../sass/_mixins.scss */
+/* line 387, ../sass/_mixins.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
-/* line 163, ../sass/_mixins.scss */
+/* line 392, ../sass/_mixins.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-/* line 167, ../sass/_mixins.scss */
+/* line 397, ../sass/_mixins.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -149,19 +151,328 @@
   animation-fill-mode: both;
 }
 
-/* line 173, ../sass/_mixins.scss */
+/* line 404, ../sass/_mixins.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 177, ../sass/_mixins.scss */
+/* line 409, ../sass/_mixins.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
-/* line 3, ../sass/main.scss */
+@font-face {
+  font-family: 'amarillo';
+  src: url("/static/fonts/amarillo/Amarillo.otf");
+  src: url("/static/fonts/amarillo/Amarillo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 257, ../sass/_mixins.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 266, ../sass/_mixins.scss */
+.noselect-recursive,
+.noselect-recursive *,
+.noselect-recursive * * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/* line 377, ../sass/_mixins.scss */
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+/* line 382, ../sass/_mixins.scss */
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+/* line 387, ../sass/_mixins.scss */
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+/* line 392, ../sass/_mixins.scss */
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+/* line 397, ../sass/_mixins.scss */
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 404, ../sass/_mixins.scss */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* line 409, ../sass/_mixins.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/* line 4, ../sass/_index.scss */
+#main-content {
+  background-image: url("https://hdwallsource.com/img/2014/9/oregon-wallpaper-21358-21895-hd-wallpapers.jpg");
+  background-attachment: fixed;
+  color: white;
+}
+/* line 9, ../sass/_index.scss */
+#main-content h3 {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: -10px;
+}
+/* line 15, ../sass/_index.scss */
+#main-content img {
+  width: 30%;
+  max-width: 150px;
+  margin: auto;
+}
+
+/* line 22, ../sass/_index.scss */
+#index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 28, ../sass/_index.scss */
+#index #soundcloud-embeds {
+  min-width: 400px;
+}
+@media screen and (max-width: 782px) {
+  /* line 33, ../sass/_index.scss */
+  #index .spacer {
+    display: none;
+  }
+}
+/* line 38, ../sass/_index.scss */
+#index strong {
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0em;
+  line-height: 1em;
+}
+/* line 46, ../sass/_index.scss */
+#index h1 {
+  color: #212121 !important;
+  text-transform: !important;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: .03em;
+  text-transform: none;
+}
+/* line 57, ../sass/_index.scss */
+#index h2 {
+  color: #212121 !important;
+  text-transform: !important;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: .03em;
+  text-transform: none;
+}
+/* line 68, ../sass/_index.scss */
+#index h3 {
+  color: #f2af7a;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* line 1, ../sass/_members.scss */
+#members_header {
+  background-image: url("https://www.walldevil.com/wallpapers/a78/winter-shift-mountains-snow-resort-city-background-wallpaper-image.jpg");
+  background-attachment: fixed;
+  background-position: center 70%;
+  padding-bottom: 86px;
+  color: white;
+}
+/* line 9, ../sass/_members.scss */
+#members_header h1 {
+  font-size: 2em;
+  letter-spacing: .1em;
+}
+/* line 14, ../sass/_members.scss */
+#members_header h3 {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: -10px;
+}
+
+/* line 22, ../sass/_members.scss */
+#members strong {
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0em;
+  line-height: 1em;
+}
+/* line 30, ../sass/_members.scss */
+#members h1 {
+  color: #212121 !important;
+  text-transform: !important;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: .03em;
+  text-transform: none;
+}
+/* line 41, ../sass/_members.scss */
+#members h2 {
+  font-size: 1.5em;
+  color: #212121 !important;
+  text-transform: !important;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+}
+/* line 51, ../sass/_members.scss */
+#members h3 {
+  color: #f2af7a;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* line 1, ../sass/_contact.scss */
+#contact_header {
+  background-image: url("https://www.walldevil.com/wallpapers/a78/winter-shift-mountains-snow-resort-city-background-wallpaper-image.jpg");
+  background-attachment: fixed;
+  background-position: center 70%;
+  padding-bottom: 86px;
+  color: white;
+}
+/* line 9, ../sass/_contact.scss */
+#contact_header h1 {
+  font-size: 2em;
+  letter-spacing: .5em;
+}
+/* line 14, ../sass/_contact.scss */
+#contact_header h3 {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: -10px;
+}
+
+/* line 8, ../sass/main.scss */
 html, body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
@@ -177,7 +488,154 @@ html, body {
   overflow-x: hidden;
 }
 
-/* line 18, ../sass/main.scss */
+/* line 2, ../sass/_mixins.scss */
+.__container {
+  overflow: hidden;
+  height: 55px;
+  padding: 0;
+}
+/* line 7, ../sass/_mixins.scss */
+.__container .__list {
+  margin-bottom: 0;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+/* line 17, ../sass/_mixins.scss */
+.__container .__list .__item {
+  line-height: 60px;
+  margin: 0;
+}
+
+@-webkit-keyframes change {
+  0%,
+        100%,
+        12.66% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+        29.32% {
+    transform: translate3d(0, -33%, 0);
+  }
+  33.32%,
+        45.98% {
+    transform: translate3d(0, -66%, 0);
+  }
+  49.98%,
+        62.64% {
+    transform: translate3d(0, -100%, 0);
+  }
+  66.64%,
+        79.3% {
+    transform: translate3d(0, -66%, 0);
+  }
+  83.3%,
+        95.96% {
+    transform: translate3d(0, -33%, 0);
+  }
+}
+@-o-keyframes change {
+  0%,
+        100%,
+        12.66% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+        29.32% {
+    transform: translate3d(0, -33%, 0);
+  }
+  33.32%,
+        45.98% {
+    transform: translate3d(0, -66%, 0);
+  }
+  49.98%,
+        62.64% {
+    transform: translate3d(0, -100%, 0);
+  }
+  66.64%,
+        79.3% {
+    transform: translate3d(0, -66%, 0);
+  }
+  83.3%,
+        95.96% {
+    transform: translate3d(0, -33%, 0);
+  }
+}
+@-moz-keyframes change {
+  0%,
+        100%,
+        12.66% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+        29.32% {
+    transform: translate3d(0, -33%, 0);
+  }
+  33.32%,
+        45.98% {
+    transform: translate3d(0, -66%, 0);
+  }
+  49.98%,
+        62.64% {
+    transform: translate3d(0, -100%, 0);
+  }
+  66.64%,
+        79.3% {
+    transform: translate3d(0, -66%, 0);
+  }
+  83.3%,
+        95.96% {
+    transform: translate3d(0, -33%, 0);
+  }
+}
+@keyframes change {
+  0%,
+        100%,
+        12.66% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+        29.32% {
+    transform: translate3d(0, -100%, 0);
+  }
+  33.32%,
+        45.98% {
+    transform: translate3d(0, -200%, 0);
+  }
+  49.98%,
+        62.64% {
+    transform: translate3d(0, -300%, 0);
+  }
+  66.64%,
+        79.3% {
+    transform: translate3d(0, -200%, 0);
+  }
+  83.3%,
+        95.96% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+/* line 26, ../sass/main.scss */
+.sqs-block {
+  position: relative;
+  height: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  outline: none;
+  box-shadow: inset 0 0 0 1px rgba(128, 128, 128, 0);
+  transition: box-shadow .2s ease-in-out;
+}
+
+/* line 36, ../sass/main.scss */
+.sqs-col-6 {
+  width: 50%;
+}
+
+/* line 40, ../sass/main.scss */
 a {
   text-decoration: none !important;
   -o-transition: 0.5s;
@@ -187,52 +645,114 @@ a {
   transition: 0.5s;
 }
 
-/* line 23, ../sass/main.scss */
-strong {
-  color: #00355f;
+/* line 49, ../sass/main.scss */
+.nanobar {
+  width: 100%;
+  height: 3px;
+  z-index: 9999;
+  top: 0;
 }
 
-/* line 28, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
+.bar {
+  width: 0;
+  height: 100%;
+  transition: height .3s;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 3s ease infinite;
+  -z-animation: rainbow 3s ease infinite;
+  -o-animation: rainbow 3s ease infinite;
+  animation: rainbow 3s ease infinite;
+}
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0 82%;
+  }
+}
+/* line 63, ../sass/main.scss */
 .navbar {
   border: 0px;
   background-color: transparent !important;
   min-height: 0;
+  padding-bottom: 10px;
 }
-/* line 33, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .navbar a {
+  font-size: 0.9em;
+  font-weight: bold;
   background-color: white !important;
 }
-/* line 37, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
+.navbar button {
+  font-size: 1.2em;
+  font-weight: bold !important;
+  padding: 0 26px 0 26px;
+  background-color: white !important;
+}
+/* line 82, ../sass/main.scss */
 .navbar .navbar-toggler {
   margin: auto;
   border: 0px;
   font-weight: 700;
 }
-/* line 43, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 .navbar .collapse {
   text-align: center !important;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .nav-divider {
   z-index: -200;
   width: 85%;
   margin: auto;
-  border-bottom: 2px solid #eee !important;
+  border-bottom: 2px solid #BDBDBD !important;
   line-height: 3em;
   margin-top: -2.3em;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
   font-size: 12px;
 }
 
-/* line 60, ../sass/main.scss */
-#main-content img {
-  width: 30%;
-  max-width: 150px;
-  margin: auto;
-}
-
-/* line 67, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 .header {
   background-image: url("https://ak2.picdn.net/shutterstock/videos/1457272/thumb/1.jpg");
   background-size: cover;
@@ -244,42 +764,42 @@ strong {
   height: 80vh;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .autoscroll {
   width: 100%;
   text-align: center;
   bottom: 10px;
   position: absolute;
 }
-/* line 81, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .autoscroll a {
   bottom: 0;
   color: white;
   text-decoration: none;
 }
-/* line 87, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .autoscroll .scrollbox {
   top: 0;
 }
-/* line 90, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .autoscroll .scrollbox .glyphicon {
   font-size: 25px;
 }
-/* line 95, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .autoscroll .scrolldown {
   font-size: 3em;
   position: absolute;
   margin-left: -19px;
   margin-bottom: -14px;
 }
-/* line 102, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .autoscroll .scrolldownarrow {
   font-size: 1.3em;
   z-index: -1;
   display: block;
 }
 
-/* line 109, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 hr {
   color: #BDBDBD;
   display: block;
@@ -287,11 +807,11 @@ hr {
   margin: auto;
   height: 3px;
   border: 0;
-  border-top: 2px solid #eee;
+  border-top: 2px solid #e3e3e3;
   padding: 0;
 }
 
-/* line 121, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 h1 {
   font-family: "Roboto", sans-serif;
   line-height: 1.20;
@@ -304,7 +824,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 h2 {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
@@ -317,7 +837,7 @@ h2 {
   margin-bottom: 5px;
 }
 
-/* line 145, ../sass/main.scss */
+/* line 182, ../sass/main.scss */
 h3 {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
@@ -330,8 +850,8 @@ h3 {
   margin-bottom: 5px;
 }
 
-/* line 157, ../sass/main.scss */
-span, p {
+/* line 194, ../sass/main.scss */
+span {
   font-family: "Open Sans", sans-serif;
   line-height: 2;
   font-weight: 400;
@@ -342,10 +862,12 @@ span, p {
   margin-top: 0;
 }
 
-/* line 168, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 .title {
-  color: #aa3649 !important;
+  padding: 24px 24px;
+  color: #f28b8d !important;
   font-weight: 100;
+  text-align: center;
   font-family: "amarillo", sans-serif;
   line-height: 1.20;
   opacity: 1.0;
@@ -356,77 +878,52 @@ span, p {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1024px) {
-  /* line 181, ../sass/main.scss */
-  html, .noise-bg {
-    width: 100%;
-    overflow: auto;
-    background: #FFF;
-    background-attachment: fixed;
-    background-image: url("../img/noise.png");
-    background-size: 150px 150px, 150% 150%;
-    background-color: #fbe7d7;
-  }
-  /* line 190, ../sass/main.scss */
-  html .paper, .noise-bg .paper {
-    padding: 25px;
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(50, 50, 50, 0.12), 0 1px 2px rgba(50, 50, 50, 0.24);
-    width: 80%;
-    max-width: 1100px;
-    margin: 7.5vh auto;
-    height: 100%;
-  }
+/* line 223, ../sass/main.scss */
+.content {
+  padding-bottom: 46px;
 }
-/* line 205, ../sass/main.scss */
-.paper {
-  text-align: center;
-  position: relative;
-}
-
-/* line 212, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .content h6 {
   font-size: 0.9em;
   margin-top: 45px;
   margin-bottom: 60px;
 }
 
-/* line 219, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 #social-links {
   font-size: 1.5em !important;
   width: 120px;
   margin: auto;
-  margin-top: 45px;
-  margin-bottom: 70px;
+  margin-top: 60px;
+  margin-bottom: 45px;
 }
-/* line 226, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 #social-links a {
   color: #212121;
 }
-/* line 230, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
 #social-links a:hover {
   color: #9E9E9E;
 }
 
-/* line 235, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-/* line 242, ../sass/main.scss */
+/* line 256, ../sass/main.scss */
 .text-container {
   color: #ffffff;
 }
 
-/* line 246, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .row {
   flex-direction: row;
 }
 
-/* line 250, ../sass/main.scss */
+/* line 264, ../sass/main.scss */
 .section {
   width: 100%;
   z-index: 1;
@@ -438,46 +935,46 @@ span, p {
   justify-content: center;
 }
 
-/* line 261, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 .section:first-child {
   height: 90vh;
 }
 
-/* line 265, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 .section:not(:first-child) {
   padding-top: 125px;
   padding-bottom: 40px;
   background-color: #f3f3f3;
 }
 
-/* line 271, ../sass/main.scss */
+/* line 285, ../sass/main.scss */
 .member {
   width: 32%;
   height: 32%;
 }
-/* line 275, ../sass/main.scss */
+/* line 289, ../sass/main.scss */
 .member .profile-pic {
   transition: 0.25s;
   font-size: 1.75em;
   background-size: 100%;
 }
-/* line 281, ../sass/main.scss */
+/* line 295, ../sass/main.scss */
 .member .profile-pic:hover {
   box-shadow: 4px;
 }
 @media (max-width: 720px) {
-  /* line 271, ../sass/main.scss */
+  /* line 285, ../sass/main.scss */
   .member {
     width: 49%;
     height: 49%;
   }
-  /* line 290, ../sass/main.scss */
+  /* line 304, ../sass/main.scss */
   .member .profile-pic img, .member .front img, .member .back img {
     width: 100%;
     height: auto;
   }
 }
-/* line 297, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 .member .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -485,54 +982,54 @@ span, p {
   perspective: 1000;
   margin-right: 15px;
 }
-/* line 306, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .member .profile-pic img, .member .front img, .member .back img {
   width: 100%;
   height: auto;
 }
 
-/* line 313, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 .card-link:hover {
   color: black;
 }
 
-/* line 317, ../sass/main.scss */
+/* line 331, ../sass/main.scss */
 .paragraph-text {
   width: 60%;
   min-width: 200px;
   margin-bottom: 20px;
 }
 
-/* line 323, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
 footer {
-  text-align: center;
+  text-align: center !important;
   padding-top: 10px;
   padding-bottom: 10px;
   color: #ee3824;
   background-color: white !important;
 }
-/* line 325, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 footer a {
-  color: #aa3649;
+  color: #f28b8d;
 }
-/* line 329, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 footer a:hover {
   color: gray !important;
 }
-/* line 333, ../sass/main.scss */
+/* line 347, ../sass/main.scss */
 footer div {
   text-align: center !important;
 }
-/* line 337, ../sass/main.scss */
+/* line 351, ../sass/main.scss */
 footer .bs-docs-footer-links {
   padding-left: 0;
   margin-bottom: 20px;
 }
-/* line 341, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 footer .bs-docs-footer-links li {
   display: inline-block;
 }
-/* line 344, ../sass/main.scss */
+/* line 358, ../sass/main.scss */
 footer .bs-docs-footer-links li + li {
   margin-left: 15px;
 }

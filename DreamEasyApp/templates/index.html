@@ -6,12 +6,90 @@
 {% endblock %}
 
 {% block content %}
-<div id='main-content'>
-    <div>
+<div class='section' id='main-content'>
+    <h1>
+        <div class="row justify-content-center __container">
+            <p class="col-4 __text">Dream&ensp;&ensp;&ensp;&ensp;</p>
+            <ul class='col-4'>
+                <li class="__list __item"> Easy</li>
+                <li class="__list __item"> Big</li>
+                <li class="__list __item"> Peaceful</li>
+                <li class="__list __item"> Tranquil</li>
+            </ul>
+        </div>
+    </h1>
+    <h3>a creative platform for all hues of artists</h3>
+    <!-- <div>
         <img src='{% static 'img/icon.jpg' %}'></img>
-    </div>
-
-<iframe width="85%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/310514271&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>    <hr>
+    </div> -->
     <h6>© 2017 Dream Easy Collective. All rights reserved</h6>
+</div>
+<div class='row justify-content-center' id='index'>
+    <div class='col-1 span-1 spacer' data-block-type="21">
+        <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1">
+            <div class='sqs-block-content'></div>
+        </div>
+    </div>
+    <div class='col-6 sqs-col-6 span-6' id='soundcloud-embeds'>
+        <div class='sqs-block html-block sqs-block-html'>
+            &ensp;
+            <h1>
+                LATEST <strong>RELEASES</strong>
+            </h1>
+            <h3>
+                OUR LATEST COLLABORATIONS!
+            </h3>
+        </div>
+        <div class='sqs-block'>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/360802745&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+        </div>
+        <div class='sqs-block'>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/344746307&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+        </div>
+        <div class='sqs-block'>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343838216&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+        </div>
+        <div class='sqs-block'>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343091401&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+        </div>
+    </div>
+    <div class='col-5 sqs-col-5 span-5'>
+        <div class='row sqs-row justify-content-center'>
+            <div class='sqs-block'>
+                <div class='col-1 sqs-col-1 span-1 spacer'></div>
+                <div class='col-5 sqs-col-5 span-5'>
+                    <div class='sqs-block'>
+                        <h1>
+                            SPOTIFY <strong>PLAYLIST</strong>
+                        </h1>
+                        <h3>
+                            LISTEN HERE!
+                        </h3>
+                    </div>
+                </div>
+                <iframe src="https://open.spotify.com/embed?uri=spotify:album:4WsuSiZsFuddq0r6f8dMJl" width="300" height="757" frameborder="0" allowtransparency="true"></iframe>
+                </div>
+            </div>
+            <div class='col-1 sqs-col-1 span-1 spacer'></div>
+        </div>
+    </div>
+</div>
+<div class='row justify-content-around' id='index'>
+    <div class='col-10 span-10'>
+        <div class='sqs-block'>
+            <h1>
+                BANDCAMP <strong>MIXTAPES</strong>
+            </h1>
+            <h3>
+                LISTEN HERE!
+            </h3>
+        </div>
+        <div class='sqs-block'>
+            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2889956093/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://dreameasyco.bandcamp.com/album/autumns-end-2">Autumn&#39;s End by Dream Easy Collective</a></iframe>
+        </div>
+        <div class='sqs-block'>
+            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3781093353/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://dreameasyco.bandcamp.com/album/palettes">Palettes by Dream Easy Collective</a></iframe>
+        </div>
+    </div>
 </div>
 {% endblock content %}

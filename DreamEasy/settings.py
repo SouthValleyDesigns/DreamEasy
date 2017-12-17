@@ -134,6 +134,6 @@ STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 # Email setup
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.mailgun.org'
-EMAIL_HOST_USER = 'postmaster@sandbox7ceb8dc5888a4996b2f7162e22b63e85.mailgun.org'
-EMAIL_HOST_PASSWORD = '8bad3d585fd9245312bf4abf5306f8c9'
+EMAIL_HOST_USER = 'postmaster@dreameasy.co'
+EMAIL_HOST_PASSWORD = '642017f605b6b3c5a1589c909948b0eb'
 EMAIL_PORT = 587

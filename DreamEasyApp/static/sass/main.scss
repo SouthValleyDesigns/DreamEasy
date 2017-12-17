@@ -149,7 +149,7 @@ hr {
     margin: auto;
     height: 3px;
     border: 0;
-    border-top: 2px solid #eee;
+    border-top: 2px solid lighten($divider_color, 15%);
     // margin: 1em 0;
     padding: 0
 }

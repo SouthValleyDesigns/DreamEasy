@@ -5,7 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 149, ../sass/_mixins.scss */
+/* line 257, ../sass/_mixins.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -15,8 +15,10 @@
   user-select: none;
 }
 
-/* line 158, ../sass/_mixins.scss */
-.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
+/* line 266, ../sass/_mixins.scss */
+.noselect-recursive,
+.noselect-recursive *,
+.noselect-recursive * * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -117,31 +119,31 @@
     transform: none;
   }
 }
-/* line 240, ../sass/_mixins.scss */
+/* line 377, ../sass/_mixins.scss */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
-/* line 244, ../sass/_mixins.scss */
+/* line 382, ../sass/_mixins.scss */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
 
-/* line 248, ../sass/_mixins.scss */
+/* line 387, ../sass/_mixins.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
-/* line 253, ../sass/_mixins.scss */
+/* line 392, ../sass/_mixins.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-/* line 257, ../sass/_mixins.scss */
+/* line 397, ../sass/_mixins.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -149,13 +151,13 @@
   animation-fill-mode: both;
 }
 
-/* line 263, ../sass/_mixins.scss */
+/* line 404, ../sass/_mixins.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 267, ../sass/_mixins.scss */
+/* line 409, ../sass/_mixins.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -168,7 +170,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 149, ../sass/_mixins.scss */
+/* line 257, ../sass/_mixins.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -178,8 +180,10 @@
   user-select: none;
 }
 
-/* line 158, ../sass/_mixins.scss */
-.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
+/* line 266, ../sass/_mixins.scss */
+.noselect-recursive,
+.noselect-recursive *,
+.noselect-recursive * * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -280,31 +284,31 @@
     transform: none;
   }
 }
-/* line 240, ../sass/_mixins.scss */
+/* line 377, ../sass/_mixins.scss */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
-/* line 244, ../sass/_mixins.scss */
+/* line 382, ../sass/_mixins.scss */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
 
-/* line 248, ../sass/_mixins.scss */
+/* line 387, ../sass/_mixins.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
-/* line 253, ../sass/_mixins.scss */
+/* line 392, ../sass/_mixins.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-/* line 257, ../sass/_mixins.scss */
+/* line 397, ../sass/_mixins.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -312,13 +316,13 @@
   animation-fill-mode: both;
 }
 
-/* line 263, ../sass/_mixins.scss */
+/* line 404, ../sass/_mixins.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 267, ../sass/_mixins.scss */
+/* line 409, ../sass/_mixins.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -378,6 +382,16 @@
   text-transform: none;
 }
 /* line 57, ../sass/_index.scss */
+#index h2 {
+  color: #212121 !important;
+  text-transform: !important;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: .03em;
+  text-transform: none;
+}
+/* line 68, ../sass/_index.scss */
 #index h3 {
   color: #f2af7a;
   font-weight: bold;
@@ -385,14 +399,57 @@
 }
 
 /* line 1, ../sass/_members.scss */
-#members {
-  background-image: url("http://thatoregonlife.com/wp-content/uploads/2016/09/dallas_oregon_autumn.jpg");
+#members_header {
+  background-image: url("https://www.walldevil.com/wallpapers/a78/winter-shift-mountains-snow-resort-city-background-wallpaper-image.jpg");
   background-attachment: fixed;
-  background-position: center center;
-}
-/* line 6, ../sass/_members.scss */
-#members h1 {
+  background-position: center 70%;
+  padding-bottom: 86px;
   color: white;
+}
+/* line 9, ../sass/_members.scss */
+#members_header h1 {
+  font-size: 2em;
+  letter-spacing: .5em;
+}
+/* line 14, ../sass/_members.scss */
+#members_header h3 {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: -10px;
+}
+
+/* line 22, ../sass/_members.scss */
+#members strong {
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0em;
+  line-height: 1em;
+}
+/* line 30, ../sass/_members.scss */
+#members h1 {
+  color: #212121 !important;
+  text-transform: !important;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: .03em;
+  text-transform: none;
+}
+/* line 41, ../sass/_members.scss */
+#members h2 {
+  font-size: 1.5em;
+  color: #212121 !important;
+  text-transform: !important;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+}
+/* line 51, ../sass/_members.scss */
+#members h3 {
+  color: #f2af7a;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
 /* line 7, ../sass/main.scss */
@@ -418,10 +475,6 @@ html, body {
   padding: 0;
 }
 /* line 7, ../sass/_mixins.scss */
-.__container .__text {
-  display: inline;
-}
-/* line 14, ../sass/_mixins.scss */
 .__container .__list {
   margin-bottom: 0;
   list-style: none;
@@ -432,89 +485,117 @@ html, body {
   animation-duration: 20s;
   animation-iteration-count: infinite;
 }
-/* line 26, ../sass/_mixins.scss */
+/* line 17, ../sass/_mixins.scss */
 .__container .__list .__item {
   line-height: 60px;
   margin: 0;
 }
 
 @-webkit-keyframes change {
-  0%, 12.66%, 100% {
+  0%,
+        100%,
+        12.66% {
     transform: translate3d(0, 0, 0);
   }
-  16.66%, 29.32% {
+  16.66%,
+        29.32% {
     transform: translate3d(0, -33%, 0);
   }
-  33.32%,45.98% {
+  33.32%,
+        45.98% {
     transform: translate3d(0, -66%, 0);
   }
-  49.98%,62.64% {
+  49.98%,
+        62.64% {
     transform: translate3d(0, -100%, 0);
   }
-  66.64%,79.3% {
+  66.64%,
+        79.3% {
     transform: translate3d(0, -66%, 0);
   }
-  83.3%,95.96% {
+  83.3%,
+        95.96% {
     transform: translate3d(0, -33%, 0);
   }
 }
 @-o-keyframes change {
-  0%, 12.66%, 100% {
+  0%,
+        100%,
+        12.66% {
     transform: translate3d(0, 0, 0);
   }
-  16.66%, 29.32% {
+  16.66%,
+        29.32% {
     transform: translate3d(0, -33%, 0);
   }
-  33.32%,45.98% {
+  33.32%,
+        45.98% {
     transform: translate3d(0, -66%, 0);
   }
-  49.98%,62.64% {
+  49.98%,
+        62.64% {
     transform: translate3d(0, -100%, 0);
   }
-  66.64%,79.3% {
+  66.64%,
+        79.3% {
     transform: translate3d(0, -66%, 0);
   }
-  83.3%,95.96% {
+  83.3%,
+        95.96% {
     transform: translate3d(0, -33%, 0);
   }
 }
 @-moz-keyframes change {
-  0%, 12.66%, 100% {
+  0%,
+        100%,
+        12.66% {
     transform: translate3d(0, 0, 0);
   }
-  16.66%, 29.32% {
+  16.66%,
+        29.32% {
     transform: translate3d(0, -33%, 0);
   }
-  33.32%,45.98% {
+  33.32%,
+        45.98% {
     transform: translate3d(0, -66%, 0);
   }
-  49.98%,62.64% {
+  49.98%,
+        62.64% {
     transform: translate3d(0, -100%, 0);
   }
-  66.64%,79.3% {
+  66.64%,
+        79.3% {
     transform: translate3d(0, -66%, 0);
   }
-  83.3%,95.96% {
+  83.3%,
+        95.96% {
     transform: translate3d(0, -33%, 0);
   }
 }
 @keyframes change {
-  0%, 12.66%, 100% {
+  0%,
+        100%,
+        12.66% {
     transform: translate3d(0, 0, 0);
   }
-  16.66%, 29.32% {
+  16.66%,
+        29.32% {
     transform: translate3d(0, -100%, 0);
   }
-  33.32%,45.98% {
+  33.32%,
+        45.98% {
     transform: translate3d(0, -200%, 0);
   }
-  49.98%,62.64% {
+  49.98%,
+        62.64% {
     transform: translate3d(0, -300%, 0);
   }
-  66.64%,79.3% {
+  66.64%,
+        79.3% {
     transform: translate3d(0, -200%, 0);
   }
-  83.3%,95.96% {
+  83.3%,
+        95.96% {
     transform: translate3d(0, -100%, 0);
   }
 }
@@ -566,46 +647,46 @@ a {
 }
 @-webkit-keyframes rainbow {
   0% {
-    background-position: 0% 82%;
+    background-position: 0 82%;
   }
   50% {
     background-position: 100% 19%;
   }
   100% {
-    background-position: 0% 82%;
+    background-position: 0 82%;
   }
 }
 @-moz-keyframes rainbow {
   0% {
-    background-position: 0% 82%;
+    background-position: 0 82%;
   }
   50% {
     background-position: 100% 19%;
   }
   100% {
-    background-position: 0% 82%;
+    background-position: 0 82%;
   }
 }
 @-o-keyframes rainbow {
   0% {
-    background-position: 0% 82%;
+    background-position: 0 82%;
   }
   50% {
     background-position: 100% 19%;
   }
   100% {
-    background-position: 0% 82%;
+    background-position: 0 82%;
   }
 }
 @keyframes rainbow {
   0% {
-    background-position: 0% 82%;
+    background-position: 0 82%;
   }
   50% {
     background-position: 100% 19%;
   }
   100% {
-    background-position: 0% 82%;
+    background-position: 0 82%;
   }
 }
 /* line 62, ../sass/main.scss */
@@ -706,7 +787,7 @@ hr {
   margin: auto;
   height: 3px;
   border: 0;
-  border-top: 2px solid #eee;
+  border-top: 2px solid #e3e3e3;
   padding: 0;
 }
 

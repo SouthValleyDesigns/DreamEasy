@@ -54,6 +54,17 @@
         text-transform: none;
     }
 
+    h2 {
+        color: $primary_text !important;
+        text-transform:  !important;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 30px;
+        letter-spacing: .03em;
+        // line-height: .9em;
+        text-transform: none;
+    }
+
     h3 {
         // color: $secondary_text;
         color: darken($secondary_text, 20%);

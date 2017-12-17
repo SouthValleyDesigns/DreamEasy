@@ -1,9 +1,57 @@
-#members {
-    background-image: url('http://thatoregonlife.com/wp-content/uploads/2016/09/dallas_oregon_autumn.jpg');
+#members_header {
+    // background-image: url('http://desktopwalls.net/wp-content/uploads/2015/12/Diamond%20Peak%20Sunset%20Oregon%204K%20Ultra%20HD%20Desktop%20Wallpaper.jpg');
+    background-image: url('https://www.walldevil.com/wallpapers/a78/winter-shift-mountains-snow-resort-city-background-wallpaper-image.jpg');
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center 70%;
+    padding-bottom: 86px;
+    color: white;
 
     h1 {
-        color: white;
+        font-size: 2em;
+        letter-spacing: .5em;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 0.9em;
+        margin-top: -10px;
+    }
+}
+
+#members {
+    strong {
+        font-weight: bold;
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 0em;
+        line-height: 1em;
+    }
+
+    h1 {
+        color: $primary_text !important;
+        text-transform:  !important;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 30px;
+        letter-spacing: .03em;
+        // line-height: .9em;
+        text-transform: none;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: $primary_text !important;
+        text-transform:  !important;
+        font-weight: 300;
+        font-style: normal;
+        // line-height: .9em;
+        text-transform: none;
+    }
+
+    h3 {
+        // color: $secondary_text;
+        color: darken($secondary_text, 20%);
+        font-weight: bold;
+        font-size: 0.9em;
     }
 }

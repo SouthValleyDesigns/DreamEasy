@@ -5,6 +5,9 @@ active
 {% endblock %}
 
 {% block content %}
+<div class='section' id='members'>
+    <h1>Members</h1>
+</div>
 <div class='container'>
     {% for member in member_list %}
         <div class='member animated slideInUp' data-toggle="popover" data-trigger="hover" data-placement="top" title="{{member.name}}" data-content="{{member.description}}">

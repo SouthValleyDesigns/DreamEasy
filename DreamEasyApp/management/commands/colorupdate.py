@@ -42,4 +42,4 @@ class Command(BaseCommand):
         # build a color palette
         palette = color_thief.get_palette(color_count=6, quality=10)
 
-        print dominant_color, palette[2]
+        print dominant_color, palette

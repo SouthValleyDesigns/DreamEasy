@@ -343,7 +343,23 @@
   margin: auto;
 }
 
-/* line 25, ../sass/_index.scss */
+/* line 22, ../sass/_index.scss */
+#index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 28, ../sass/_index.scss */
+#index #soundcloud-embeds {
+  min-width: 400px;
+}
+@media screen and (max-width: 782px) {
+  /* line 33, ../sass/_index.scss */
+  #index .spacer {
+    display: none;
+  }
+}
+/* line 38, ../sass/_index.scss */
 #index strong {
   font-weight: bold;
   font-weight: 700;
@@ -351,7 +367,7 @@
   letter-spacing: 0em;
   line-height: 1em;
 }
-/* line 33, ../sass/_index.scss */
+/* line 46, ../sass/_index.scss */
 #index h1 {
   color: #212121 !important;
   text-transform: !important;
@@ -361,7 +377,7 @@
   letter-spacing: .03em;
   text-transform: none;
 }
-/* line 44, ../sass/_index.scss */
+/* line 57, ../sass/_index.scss */
 #index h3 {
   color: #f2af7a;
   font-weight: bold;
@@ -785,48 +801,52 @@ span, p {
   margin-bottom: 10px;
 }
 
-/* line 220, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
+.content {
+  padding-bottom: 46px;
+}
+/* line 216, ../sass/main.scss */
 .content h6 {
   font-size: 0.9em;
   margin-top: 45px;
   margin-bottom: 60px;
 }
 
-/* line 227, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 #social-links {
   font-size: 1.5em !important;
   width: 120px;
   margin: auto;
-  margin-top: 45px;
-  margin-bottom: 70px;
+  margin-top: 70px;
+  margin-bottom: 45px;
 }
-/* line 234, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 #social-links a {
   color: #212121;
 }
-/* line 238, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 #social-links a:hover {
   color: #9E9E9E;
 }
 
-/* line 243, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-/* line 250, ../sass/main.scss */
+/* line 246, ../sass/main.scss */
 .text-container {
   color: #ffffff;
 }
 
-/* line 254, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 .row {
   flex-direction: row;
 }
 
-/* line 258, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 .section {
   width: 100%;
   z-index: 1;
@@ -838,46 +858,46 @@ span, p {
   justify-content: center;
 }
 
-/* line 269, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 .section:first-child {
   height: 90vh;
 }
 
-/* line 273, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 .section:not(:first-child) {
   padding-top: 125px;
   padding-bottom: 40px;
   background-color: #f3f3f3;
 }
 
-/* line 279, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 .member {
   width: 32%;
   height: 32%;
 }
-/* line 283, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 .member .profile-pic {
   transition: 0.25s;
   font-size: 1.75em;
   background-size: 100%;
 }
-/* line 289, ../sass/main.scss */
+/* line 285, ../sass/main.scss */
 .member .profile-pic:hover {
   box-shadow: 4px;
 }
 @media (max-width: 720px) {
-  /* line 279, ../sass/main.scss */
+  /* line 275, ../sass/main.scss */
   .member {
     width: 49%;
     height: 49%;
   }
-  /* line 298, ../sass/main.scss */
+  /* line 294, ../sass/main.scss */
   .member .profile-pic img, .member .front img, .member .back img {
     width: 100%;
     height: auto;
   }
 }
-/* line 305, ../sass/main.scss */
+/* line 301, ../sass/main.scss */
 .member .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -885,25 +905,25 @@ span, p {
   perspective: 1000;
   margin-right: 15px;
 }
-/* line 314, ../sass/main.scss */
+/* line 310, ../sass/main.scss */
 .member .profile-pic img, .member .front img, .member .back img {
   width: 100%;
   height: auto;
 }
 
-/* line 321, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 .card-link:hover {
   color: black;
 }
 
-/* line 325, ../sass/main.scss */
+/* line 321, ../sass/main.scss */
 .paragraph-text {
   width: 60%;
   min-width: 200px;
   margin-bottom: 20px;
 }
 
-/* line 331, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 footer {
   text-align: center !important;
   padding-top: 10px;
@@ -911,28 +931,28 @@ footer {
   color: #ee3824;
   background-color: white !important;
 }
-/* line 333, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 footer a {
   color: #f28b8d;
 }
-/* line 337, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 footer a:hover {
   color: gray !important;
 }
-/* line 341, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
 footer div {
   text-align: center !important;
 }
-/* line 345, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 footer .bs-docs-footer-links {
   padding-left: 0;
   margin-bottom: 20px;
 }
-/* line 349, ../sass/main.scss */
+/* line 345, ../sass/main.scss */
 footer .bs-docs-footer-links li {
   display: inline-block;
 }
-/* line 352, ../sass/main.scss */
+/* line 348, ../sass/main.scss */
 footer .bs-docs-footer-links li + li {
   margin-left: 15px;
 }

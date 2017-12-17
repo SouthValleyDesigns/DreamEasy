@@ -207,16 +207,12 @@ span, p {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width:1024px){
-
+@media screen and (min-width:770px){
 }
 
-// // .paper {
-//     text-align: center;
-// //     position: relative;
-// // }
-
 .content {
+    padding-bottom: 46px;
+
     h6 {
         font-size: 0.9em;
         margin-top: 45px;
@@ -228,8 +224,8 @@ span, p {
     font-size: 1.5em !important;
     width: 120px;
     margin: auto;
-    margin-top: 45px;
-    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 45px;
 
     a {
         color: $primary_text;

@@ -21,6 +21,19 @@
 
 #index {
     // padding-bottom: 46px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    #soundcloud-embeds {
+        min-width: 400px;
+    }
+
+    @media screen and (max-width:782px){
+        .spacer {
+            display: none;
+        }
+    }
 
     strong {
         font-weight: bold;

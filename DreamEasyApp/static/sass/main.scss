@@ -101,48 +101,6 @@ strong {
     font-size: 12px;
 }
 
-.header {
-    @include backgroundImage('https://ak2.picdn.net/shutterstock/videos/1457272/thumb/1.jpg');
-    background-attachment: fixed;
-    text-align: center;
-    color: white;
-    height: 80vh;
-}
-
-.autoscroll {
-    width: 100%;
-    text-align: center;
-    bottom: 10px;
-    position: absolute;
-
-    a {
-        bottom: 0;
-        color: white;
-        text-decoration: none;
-    }
-
-    .scrollbox {
-        top: 0;
-
-        .glyphicon {
-            font-size: 25px;
-        }
-    }
-
-    .scrolldown {
-        font-size: 3em;
-        position: absolute;
-        margin-left: -19px;
-        margin-bottom: -14px;
-    }
-
-    .scrolldownarrow {
-        font-size: 1.3em;
-        z-index: -1;
-        display: block;
-    }
-}
-
 hr {
     color: $divider_color;
     display: block;
@@ -217,9 +175,6 @@ span {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width:770px){
-}
-
 .content {
     padding-bottom: 46px;
 
@@ -280,48 +235,6 @@ span {
     padding-top: 125px;
     padding-bottom: 40px;
     background-color: #f3f3f3;
-}
-
-.member {
-    width: 32%;
-    height: 32%;
-
-    .profile-pic {
-        transition: 0.25s;
-        font-size: 1.75em;
-        background-size: 100%;
-    }
-
-    .profile-pic:hover {
-        box-shadow: 4px;
-    }
-
-    @media (max-width: 720px) {
-        width: 49%;
-        height: 49%;
-
-        .profile-pic, .front, .back {
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
-
-    .flip-container {
-        -webkit-perspective: 1000;
-        -moz-perspective: 1000;
-        -o-perspective: 1000;
-        perspective: 1000;
-        margin-right: 15px;
-    }
-
-    .profile-pic, .front, .back {
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
 }
 
 .card-link:hover {

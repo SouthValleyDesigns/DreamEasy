@@ -19,6 +19,58 @@
 }
 
 #members {
+    .member {
+        width: 25%;
+        height: 25%;
+        text-align: center;
+
+        h3 {
+            // color: $secondary_text;
+            color: black;
+        }
+
+        .profile-pic {
+            transition: 0.25s;
+            font-size: 1.75em;
+            background-size: 100%;
+
+            :hover {
+                opacity: .5;
+            }
+        }
+
+        .profile-pic:hover {
+            box-shadow: 4px;
+        }
+
+        @media (max-width: 720px) {
+            width: 49%;
+            height: 49%;
+
+            .profile-pic, .front, .back {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .flip-container {
+            -webkit-perspective: 1000;
+            -moz-perspective: 1000;
+            -o-perspective: 1000;
+            perspective: 1000;
+            margin-right: 15px;
+        }
+
+        .profile-pic, .front, .back {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
     strong {
         font-weight: bold;
         font-weight: 700;

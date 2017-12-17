@@ -26,7 +26,7 @@ active
                 <a  class='profile-pic {% if member.soundcloud_url == '#' %}no-url{% endif %}' href='{{member.soundcloud_url}}' {% if member.soundcloud_url != '#' %}target="_blank"{% endif %}><img src='{{member.photo_url}}'></img></a>
 
                 <p class='flip-container'>
-                    {{member.name}}
+                    <h3>{{member.name}}<h3>
                 </p>
                 {% if member.soundcloud_url == '#' %}
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -47,6 +47,5 @@ active
             $('.alert').show()
         })
     });
-    $('[data-toggle="popover"]').popover();
 </script>
 {% endblock %}

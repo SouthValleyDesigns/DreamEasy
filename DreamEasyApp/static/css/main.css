@@ -446,14 +446,16 @@
   /* line 22, ../sass/_members.scss */
   #members .member {
     width: 49%;
+    height: auto;
+    margin: auto;
   }
-  /* line 51, ../sass/_members.scss */
+  /* line 52, ../sass/_members.scss */
   #members .member .profile-pic img, #members .member .front img, #members .member .back img {
     width: 100%;
     height: auto;
   }
 }
-/* line 58, ../sass/_members.scss */
+/* line 59, ../sass/_members.scss */
 #members .member .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -461,12 +463,12 @@
   perspective: 1000;
   margin-right: 15px;
 }
-/* line 67, ../sass/_members.scss */
+/* line 68, ../sass/_members.scss */
 #members .member .profile-pic img, #members .member .front img, #members .member .back img {
   width: 100%;
   height: auto;
 }
-/* line 74, ../sass/_members.scss */
+/* line 75, ../sass/_members.scss */
 #members strong {
   font-weight: bold;
   font-weight: 700;
@@ -474,7 +476,7 @@
   letter-spacing: 0em;
   line-height: 1em;
 }
-/* line 82, ../sass/_members.scss */
+/* line 83, ../sass/_members.scss */
 #members h1 {
   color: #212121 !important;
   text-transform: !important;
@@ -484,7 +486,7 @@
   letter-spacing: .03em;
   text-transform: none;
 }
-/* line 93, ../sass/_members.scss */
+/* line 94, ../sass/_members.scss */
 #members h2 {
   font-size: 1.5em;
   color: #212121 !important;
@@ -493,7 +495,7 @@
   font-style: normal;
   text-transform: none;
 }
-/* line 103, ../sass/_members.scss */
+/* line 104, ../sass/_members.scss */
 #members h3 {
   color: #f2af7a;
   font-weight: bold;

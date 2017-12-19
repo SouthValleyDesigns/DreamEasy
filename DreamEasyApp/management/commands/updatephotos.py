@@ -34,7 +34,8 @@ class Command(BaseCommand):
                 member.save()
 
             except:
-                raise CommandError('Could not scrape "%s" for soundcould avatar' % member.name)
+                print 'fuck'
+                # raise CommandError('Could not scrape "%s" for soundcould avatar' % member.name)
 
 
         # for admin in admin_list:

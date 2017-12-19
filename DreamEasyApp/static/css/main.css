@@ -328,23 +328,17 @@
   animation-duration: 2s;
 }
 
-/* line 4, ../sass/_index.scss */
+/* line 10, ../sass/_index.scss */
 #main-content {
   background-image: url("https://hdwallsource.com/img/2014/9/oregon-wallpaper-21358-21895-hd-wallpapers.jpg");
   background-attachment: fixed;
   color: white;
 }
-/* line 9, ../sass/_index.scss */
+/* line 15, ../sass/_index.scss */
 #main-content h3 {
   font-weight: bold;
   font-size: 0.9em;
   margin-top: -10px;
-}
-/* line 15, ../sass/_index.scss */
-#main-content img {
-  width: 30%;
-  max-width: 150px;
-  margin: auto;
 }
 
 /* line 22, ../sass/_index.scss */
@@ -393,7 +387,7 @@
 }
 /* line 68, ../sass/_index.scss */
 #index h3 {
-  color: #f2af7a;
+  color: #51c3f8;
   font-weight: bold;
   font-size: 0.9em;
 }
@@ -497,7 +491,7 @@
 }
 /* line 104, ../sass/_members.scss */
 #members h3 {
-  color: #f2af7a;
+  color: #51c3f8;
   font-weight: bold;
   font-size: 0.9em;
 }
@@ -868,7 +862,7 @@ span {
 /* line 163, ../sass/main.scss */
 .title {
   padding: 24px 24px;
-  color: #f28b8d !important;
+  color: #03A9F4 !important;
   font-weight: 100;
   text-align: center;
   font-family: "amarillo", sans-serif;
@@ -972,7 +966,7 @@ footer {
 }
 /* line 252, ../sass/main.scss */
 footer a {
-  color: #f28b8d;
+  color: #03A9F4;
 }
 /* line 256, ../sass/main.scss */
 footer a:hover {

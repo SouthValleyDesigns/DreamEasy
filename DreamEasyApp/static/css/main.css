@@ -330,34 +330,36 @@
 
 /* line 10, ../sass/_index.scss */
 #main-content {
-  background-image: url("https://hdwallsource.com/img/2014/9/oregon-wallpaper-21358-21895-hd-wallpapers.jpg");
+  background-image: url("../img/main.jpg");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50%;
   color: white;
 }
-/* line 15, ../sass/_index.scss */
+/* line 17, ../sass/_index.scss */
 #main-content h3 {
   font-weight: bold;
   font-size: 0.9em;
   margin-top: -10px;
 }
 
-/* line 22, ../sass/_index.scss */
+/* line 24, ../sass/_index.scss */
 #index {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 28, ../sass/_index.scss */
+/* line 30, ../sass/_index.scss */
 #index #soundcloud-embeds {
   min-width: 400px;
 }
 @media screen and (max-width: 782px) {
-  /* line 33, ../sass/_index.scss */
+  /* line 35, ../sass/_index.scss */
   #index .spacer {
     display: none;
   }
 }
-/* line 38, ../sass/_index.scss */
+/* line 40, ../sass/_index.scss */
 #index strong {
   font-weight: bold;
   font-weight: 700;
@@ -365,7 +367,7 @@
   letter-spacing: 0em;
   line-height: 1em;
 }
-/* line 46, ../sass/_index.scss */
+/* line 48, ../sass/_index.scss */
 #index h1 {
   color: #212121 !important;
   text-transform: !important;
@@ -375,7 +377,7 @@
   letter-spacing: .03em;
   text-transform: none;
 }
-/* line 57, ../sass/_index.scss */
+/* line 59, ../sass/_index.scss */
 #index h2 {
   color: #212121 !important;
   text-transform: !important;
@@ -385,7 +387,7 @@
   letter-spacing: .03em;
   text-transform: none;
 }
-/* line 68, ../sass/_index.scss */
+/* line 70, ../sass/_index.scss */
 #index h3 {
   color: #51c3f8;
   font-weight: bold;
@@ -394,9 +396,8 @@
 
 /* line 1, ../sass/_members.scss */
 #members_header {
-  background-image: url("https://www.walldevil.com/wallpapers/a78/winter-shift-mountains-snow-resort-city-background-wallpaper-image.jpg");
+  background-image: url("https://hdwallsource.com/img/2014/9/oregon-wallpaper-21358-21895-hd-wallpapers.jpg");
   background-attachment: fixed;
-  background-position: center 70%;
   padding-bottom: 86px;
   color: white;
 }

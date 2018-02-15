@@ -8,8 +8,10 @@
 // }
 
 #main-content {
-    background-image: url('https://hdwallsource.com/img/2014/9/oregon-wallpaper-21358-21895-hd-wallpapers.jpg');
+    background-image: url('../img/main.jpg');
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50%;
     color: white;
 
     h3 {

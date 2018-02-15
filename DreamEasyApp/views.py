@@ -3,13 +3,29 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail, BadHeaderError
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.http import HttpResponse, HttpResponseRedirect
-from .models import Member, Admin
+from .models import Member, Admin, SoundcloudPost
 from .forms import ContactForm
 
 
 def index(request):
-    return render(request, 'index.html')
+    soundcloud_releases = SoundcloudPost.objects.order_by('-date')
+
+    page = request.GET.get('page', 1)
+
+    paginator = Paginator(soundcloud_releases, 4)
+    try:
+        soundcloud_releases = paginator.page(page)
+    except PageNotAnInteger:
+        soundcloud_releases = paginator.page(1)
+    except EmptyPage:
+        soundcloud_releases = paginator.page(paginator.num_pages)
+
+
+    return render(request, 'index.html', {
+        'soundcloud_releases':soundcloud_releases,
+    })
 
 
 def members(request):

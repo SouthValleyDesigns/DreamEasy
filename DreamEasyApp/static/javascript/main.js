@@ -11,4 +11,12 @@ $(document).ready(function() {
 
     // size bar 100% and and finish
     nanobar.go(100);
+
+    $('#pagination-demo').twbsPagination({
+    totalPages: 35,
+    visiblePages: 7,
+    onPageClick: function (event, page) {
+        $('#page-content').text('Page ' + page);
+    }
+    });
 });
